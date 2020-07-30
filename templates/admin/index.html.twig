@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Médiathèque - Administration{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('assets/css/admin.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+<h1 class="my-4" class="my-4">Panneau Administrateur</h1>
+
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/users.png" class="card-img-top px-4 pt-4" alt="users_icon"> #}
+            <div class="card-body">
+                <h5 class="card-title">Utilisateurs</h5>
+                <div class="card-text">
+                    <a role="button" class="btn btn-info" href="{{ path('user_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success" href="{{ path('user_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/borrowing.png" class="card-img-top px-4 pt-4" alt="borrowing_icon"> #}
+            <div class="card-body">
+                <h5 class="card-title">Emprunts</h5>
+                <div class="card-text">
+                    <a role="button" class="btn btn-info" href="{{ path('borrowing_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success" href="{{ path('borrowing_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/book.svg" class="card-img-top px-4 pt-4" alt="book"> #}
+            <div class="card-body">
+                <h5 class="card-title">Livres</h5>
+                <div class="card-text">
+                    <a role="button" class="btn btn-info mb-2" href="{{ path('book_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success mb-2" href="{{ path('book_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/cd_dvd.png" class="card-img-top px-4 pt-4" alt="cd_dvd"> #}
+            <div class="card-body">
+                <h5 class="card-title">CD</h5>
+                <div class="card-text">                
+                    <a role="button" class="btn btn-info mb-2" href="{{ path('cd_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success mb-2" href="{{ path('cd_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/creator.png" class="card-img-top px-4 pt-4" alt="creator"> #}
+            <div class="card-body">
+                <h5 class="card-title">Artistes</h5>
+                <div class="card-text">
+                    <a role="button" class="btn btn-info" href="{{ path('creator_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success" href="{{ path('creator_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card h-100">
+            {# <img src="img/event.png" class="card-img-top px-4 pt-4" alt="event"> #}
+            <div class="card-body">
+                <h5 class="card-title">Événements</h5>
+                <div class="card-text">
+                    <a role="button" class="btn btn-info" href="{{ path('meet_up_index') }}">Lister</a>
+                    <a role="button" class="btn btn-success" href="{{ path('meet_up_new') }}">Ajouter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

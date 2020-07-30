@@ -1,0 +1,10 @@
+
+.participantContainer {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+}
+
+.participantContainer legend {
+    display: none;
+}

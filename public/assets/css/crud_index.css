@@ -1,0 +1,8 @@
+td.actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+td.actions a {
+    margin: 0 0.2em;
+}

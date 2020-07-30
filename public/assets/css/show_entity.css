@@ -1,0 +1,8 @@
+div.actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.actions > * {
+    margin: 0 0.2em;
+}
